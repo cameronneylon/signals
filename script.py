@@ -1,4 +1,3 @@
-import pyalm.pyalm as pyalm
 import requests
 import json
 import os.path
@@ -18,7 +17,7 @@ def get_events(doi, **kwargs):
 		j = resp.json()
 		return j
 
-outdir = 'output'
+outdir = 'data/output'
 doifile = 'doilist.txt'
 dois = []
 
